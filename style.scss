@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+$dark-bg: linear-gradient(#110f24 0%, #05050b 100%);
+$blue-bg: linear-gradient(140deg, #00d7af 25%, #575bde 100%);
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  border: none;
+  font-size: 15px;
+  border-radius: 25px;
+  background: none;
+}
+
+header {
+  position: absolute;
+  top: 1;
+  width: 100%;
+
+  .header__main {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    .nav__logo {
+      display: flex;
+      justify-content: space-between;
+
+      .logo {
+        display: flex;
+        align-items: center;
+        > a {
+          display: flex;
+          align-items: center;
+          font-size: 25px;
+          font-weight: bold;
+
+          > p {
+            padding: 0 0 0 10px;
+          }
+        }
+      }
+
+      .nav > ul {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin: 0 0 0 30px;
+
+        > li {
+          display: flex;
+          margin: 0 20px;
+
+          > a {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .auth {
+    button:first-child {
+      font-size: 15px;
+      padding: 10px;
+      margin: 0 20px 0 0;
+    }
+
+    button:last-child {
+      font-size: 15px;
+      background: #444444;
+      padding: 10px;
+    }
+  }
+}
+
+section {
+  .main__wrapper {
+    background: $dark-bg;
+
+    .main {
+      display: flex;
+      height: 100vh;
+      .main__center {
+        display: flex;
+        margin: auto;
+        align-items: center;
+        max-width: 1100px;
+
+        .left {
+          > h1 {
+            font-size: 50px;
+          }
+
+          > p {
+            margin: 20px 0;
+            font-size: 25px;
+          }
+
+          > button {
+            background: linear-gradient(140deg, #575bde 25%, #393ed8 100%);
+            padding: 15px;
+            margin: 25px 0;
+            font-size: 18px;
+          }
+        }
+
+        .right {
+          > img {
+            height: 400px;
+          }
+        }
+      }
+    }
+  }
+}
