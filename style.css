@@ -9,6 +9,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  background: #f1f1f1;
+}
+
 button {
   border: none;
   font-size: 15px;
@@ -16,9 +20,18 @@ button {
   background: none;
 }
 
+img {
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 50px;
+  padding: 0 0 30px;
+}
+
 header {
   position: absolute;
-  top: 1;
+  z-index: 1;
   width: 100%;
 }
 header .header__main {
@@ -119,21 +132,174 @@ section .main__wrapper .framework {
 }
 section .main__wrapper .framework .right > img {
   height: 350px;
-  border-radius: 10px;
 }
 section .main__wrapper .framework .left {
   margin: 0 35px 0 0;
+}
+section .main__wrapper .framework .left > h3 {
+  font-size: 35px;
+  margin: 0 0 20px;
+}
+section .main__wrapper .framework .left > p {
+  font-size: 20px;
 }
 section .main__wrapper .designed {
   display: flex;
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
+  padding: 0 0 80px;
 }
 section .main__wrapper .designed .left > img {
   height: 350px;
-  border-radius: 10px;
 }
 section .main__wrapper .designed .right {
   margin: 0 0 0 35px;
+}
+section .main__wrapper .designed .right > h3 {
+  font-size: 35px;
+  margin: 0 0 20px;
+}
+section .main__wrapper .designed .right > p {
+  font-size: 20px;
+}
+section .present__wrapper {
+  padding: 80px 0;
+  margin-bottom: -150px;
+}
+section .present__wrapper .present {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+section .present__wrapper .present .content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 0 80px;
+}
+section .present__wrapper .present .content > h2,
+section .present__wrapper .present .content > p {
+  color: #000;
+}
+section .present__wrapper .present .content > p {
+  font-size: 20px;
+}
+section .present__wrapper .present > img {
+  max-width: 100%;
+}
+section .playing__customers__wrapper {
+  background: linear-gradient(#110f24 0%, #05050b 100%);
+  padding: 150px 0 80px;
+}
+section .playing__customers__wrapper .playing__customers {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+section .playing__customers__wrapper .playing__customers > h2 {
+  font-size: 35px;
+}
+section .playing__customers__wrapper .playing__customers > p {
+  font-size: 20px;
+}
+section .playing__customers__wrapper .playing__customers .img__collection {
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+section .playing__customers__wrapper .playing__customers > img {
+  max-width: 100%;
+}
+section .timeline__wrapper {
+  padding: 80px 0;
+}
+section .timeline__wrapper .timeline {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+section .timeline__wrapper .timeline > h2,
+section .timeline__wrapper .timeline p,
+section .timeline__wrapper .timeline h3 {
+  color: #000;
+}
+section .timeline__wrapper .timeline > p {
+  font-size: 20px;
+}
+section .timeline__wrapper .timeline .timeline__content {
+  margin: 80px 0;
+  padding: 35px 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  border-top: 2px solid #ccced0;
+  position: relative;
+}
+section .timeline__wrapper .timeline .timeline__content::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  border-top: 2px solid #ccced0;
+  top: -2px;
+  left: -15px;
+}
+section .timeline__wrapper .timeline .timeline__content .content__block {
+  max-width: 22%;
+}
+section .timeline__wrapper .timeline .timeline__content .content__block::before {
+  border-radius: 50%;
+  content: "";
+  background: #575bde;
+  border: 4px solid #fff;
+  position: absolute;
+  top: -10px;
+  height: 10px;
+  width: 10px;
+}
+section .timeline__wrapper .timeline .timeline__content .content__block > h3 {
+  font-size: 23px;
+  margin: 0 0 20px;
+}
+section .danille__mayer {
+  background: #f6f6f9;
+  display: flex;
+  height: 500px;
+}
+section .danille__mayer .left {
+  width: 50%;
+  padding: 200px 30px;
+  text-align: center;
+}
+section .danille__mayer .left > h2,
+section .danille__mayer .left > p {
+  color: #000;
+}
+section .danille__mayer .left > h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+section .danille__mayer .left > p {
+  font-size: 30px;
+  font-weight: bold;
+}
+section .danille__mayer .right {
+  width: 50%;
+  height: 100%;
+  background: url(./assets/img/image-03@2x.jpg);
+  background-size: cover;
+}
+section .setup__wrapper {
+  padding: 80px 0;
+}
+section .setup__wrapper .setup {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+section .setup__wrapper .setup > h2,
+section .setup__wrapper .setup > p {
+  color: #000;
+}
+section .setup__wrapper .setup > p {
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
